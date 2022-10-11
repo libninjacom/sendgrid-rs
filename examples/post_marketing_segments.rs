@@ -6,8 +6,8 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PostMarketingSegmentsRequired {
         parent_list_id: "your parent list id",
-        name: "your name",
         query_dsl: "your query dsl",
+        name: "your name",
         parent_list_ids: &["your parent list ids"],
     };
     let response = client.post_marketing_segments(args).send().await.unwrap();

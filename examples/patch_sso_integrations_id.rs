@@ -5,12 +5,12 @@ use sendgrid2::request::PatchSsoIntegrationsIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchSsoIntegrationsIdRequired {
-        id: "your id",
-        signout_url: "your signout url",
-        name: "your name",
         signin_url: "your signin url",
-        enabled: true,
+        signout_url: "your signout url",
         entity_id: "your entity id",
+        id: "your id",
+        enabled: true,
+        name: "your name",
     };
     let response = client
         .patch_sso_integrations_id(args)

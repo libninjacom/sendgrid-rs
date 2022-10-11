@@ -6,11 +6,11 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchCampaignsCampaignIdRequired {
         categories: &["your categories"],
-        title: "your title",
-        subject: "your subject",
-        plain_content: "your plain content",
         html_content: "your html content",
+        title: "your title",
+        plain_content: "your plain content",
         campaign_id: 1,
+        subject: "your subject",
     };
     let response = client
         .patch_campaigns_campaign_id(args)

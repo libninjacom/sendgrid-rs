@@ -5,8 +5,8 @@ use sendgrid2::request::PatchAsmGroupsGroupIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchAsmGroupsGroupIdRequired {
-        description: "your description",
         is_default: true,
+        description: "your description",
         group_id: "your group id",
         name: "your name",
     };

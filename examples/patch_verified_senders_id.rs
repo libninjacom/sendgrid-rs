@@ -6,9 +6,9 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchVerifiedSendersIdRequired {
         from_email: "your from email",
-        reply_to: "your reply to",
-        id: "your id",
         nickname: "your nickname",
+        id: "your id",
+        reply_to: "your reply to",
     };
     let response = client
         .patch_verified_senders_id(args)

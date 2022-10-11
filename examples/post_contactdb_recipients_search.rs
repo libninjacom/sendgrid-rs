@@ -4,9 +4,9 @@ use sendgrid2::model::*;
 async fn main() {
     let client = SendgridClient::from_env();
     let conditions = vec![
-        ContactdbSegmentsConditions { operator : "your operator".to_owned(), and_or :
-        Some("your and or".to_owned()), value : "your value".to_owned(), field :
-        "your field".to_owned() }
+        ContactdbSegmentsConditions { and_or : Some("your and or".to_owned()), field :
+        "your field".to_owned(), value : "your value".to_owned(), operator :
+        "your operator".to_owned() }
     ];
     let list_id = 1;
     let response = client

@@ -6,14 +6,14 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PostSendersRequired {
         address2: "your address 2",
-        reply_to: ::serde_json::json!({}),
         nickname: "your nickname",
         city: "your city",
-        from: ::serde_json::json!({}),
         country: "your country",
+        zip: "your zip",
+        from: ::serde_json::json!({}),
         state: "your state",
         address: "your address",
-        zip: "your zip",
+        reply_to: ::serde_json::json!({}),
     };
     let response = client
         .post_senders(args)

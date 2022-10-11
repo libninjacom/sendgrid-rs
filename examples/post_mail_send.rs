@@ -5,12 +5,12 @@ use sendgrid2::request::PostMailSendRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostMailSendRequired {
-        content: vec![::serde_json::json!({})],
+        personalizations: vec![::serde_json::json!({})],
         from: FromEmailObject {
             name: Some("your name".to_owned()),
             email: "your email".to_owned(),
         },
-        personalizations: vec![::serde_json::json!({})],
+        content: vec![::serde_json::json!({})],
         subject: "your subject",
     };
     let response = client

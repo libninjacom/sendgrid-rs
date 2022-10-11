@@ -5,11 +5,11 @@ use sendgrid2::request::PostMarketingSendersRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostMarketingSendersRequired {
-        country: "your country",
-        nickname: "your nickname",
+        address: "your address",
         city: "your city",
         from: ::serde_json::json!({}),
-        address: "your address",
+        country: "your country",
+        nickname: "your nickname",
     };
     let response = client
         .post_marketing_senders(args)

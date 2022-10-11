@@ -5,19 +5,19 @@ use sendgrid2::request::PatchUserWebhooksEventSettingsRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchUserWebhooksEventSettingsRequired {
-        group_resubscribe: true,
-        deferred: true,
-        processed: true,
         unsubscribe: true,
-        click: true,
+        url: "your url",
+        group_resubscribe: true,
         enabled: true,
-        group_unsubscribe: true,
+        click: true,
         open: true,
+        delivered: true,
+        processed: true,
+        group_unsubscribe: true,
         spam_report: true,
+        deferred: true,
         bounce: true,
         dropped: true,
-        url: "your url",
-        delivered: true,
     };
     let response = client
         .patch_user_webhooks_event_settings(args)

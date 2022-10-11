@@ -5,11 +5,11 @@ use sendgrid2::request::PostSsoIntegrationsRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostSsoIntegrationsRequired {
-        signout_url: "your signout url",
-        name: "your name",
-        entity_id: "your entity id",
         enabled: true,
+        signout_url: "your signout url",
         signin_url: "your signin url",
+        entity_id: "your entity id",
+        name: "your name",
     };
     let response = client
         .post_sso_integrations(args)
