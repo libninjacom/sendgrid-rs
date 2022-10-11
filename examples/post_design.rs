@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PostDesignRequired;
@@ -6,10 +7,10 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PostDesignRequired {
         name: "your name",
-        categories: &["your categories"],
         editor: "your editor",
         generate_plain_content: true,
         subject: "your subject",
+        categories: &["your categories"],
         html_content: "your html content",
         plain_content: "your plain content",
     };

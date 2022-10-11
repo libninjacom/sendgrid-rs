@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PatchCampaignsCampaignIdRequired;
@@ -6,10 +7,10 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchCampaignsCampaignIdRequired {
         categories: &["your categories"],
-        html_content: "your html content",
         title: "your title",
-        plain_content: "your plain content",
+        html_content: "your html content",
         campaign_id: 1,
+        plain_content: "your plain content",
         subject: "your subject",
     };
     let response = client

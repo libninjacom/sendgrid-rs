@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PostMarketingSendersRequired;
@@ -6,10 +7,10 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PostMarketingSendersRequired {
         address: "your address",
-        city: "your city",
-        from: ::serde_json::json!({}),
         country: "your country",
+        city: "your city",
         nickname: "your nickname",
+        from: ::serde_json::json!({}),
     };
     let response = client
         .post_marketing_senders(args)

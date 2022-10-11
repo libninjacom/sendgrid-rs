@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PostMailSendRequired;
@@ -6,12 +7,12 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PostMailSendRequired {
         personalizations: vec![::serde_json::json!({})],
+        content: vec![::serde_json::json!({})],
+        subject: "your subject",
         from: FromEmailObject {
             name: Some("your name".to_owned()),
             email: "your email".to_owned(),
         },
-        content: vec![::serde_json::json!({})],
-        subject: "your subject",
     };
     let response = client
         .post_mail_send(args)

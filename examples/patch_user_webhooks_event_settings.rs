@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PatchUserWebhooksEventSettingsRequired;
@@ -6,18 +7,18 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchUserWebhooksEventSettingsRequired {
         unsubscribe: true,
-        url: "your url",
-        group_resubscribe: true,
-        enabled: true,
-        click: true,
-        open: true,
-        delivered: true,
-        processed: true,
         group_unsubscribe: true,
-        spam_report: true,
-        deferred: true,
+        click: true,
+        enabled: true,
         bounce: true,
+        group_resubscribe: true,
+        deferred: true,
+        delivered: true,
+        open: true,
         dropped: true,
+        processed: true,
+        spam_report: true,
+        url: "your url",
     };
     let response = client
         .patch_user_webhooks_event_settings(args)

@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 #[tokio::main]
@@ -6,7 +7,7 @@ async fn main() {
     let response = client
         .delete_access_settings_whitelist()
         .on_behalf_of("your on behalf of")
-        .ids(&[1])
+        .ids(vec![1])
         .send()
         .await
         .unwrap();

@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PatchVerifiedSendersIdRequired;
@@ -5,10 +6,10 @@ use sendgrid2::request::PatchVerifiedSendersIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchVerifiedSendersIdRequired {
+        reply_to: "your reply to",
         from_email: "your from email",
         nickname: "your nickname",
         id: "your id",
-        reply_to: "your reply to",
     };
     let response = client
         .patch_verified_senders_id(args)

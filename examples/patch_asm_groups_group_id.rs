@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PatchAsmGroupsGroupIdRequired;
@@ -5,10 +6,10 @@ use sendgrid2::request::PatchAsmGroupsGroupIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchAsmGroupsGroupIdRequired {
-        is_default: true,
-        description: "your description",
-        group_id: "your group id",
         name: "your name",
+        group_id: "your group id",
+        description: "your description",
+        is_default: true,
     };
     let response = client
         .patch_asm_groups_group_id(args)

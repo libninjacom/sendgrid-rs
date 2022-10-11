@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PatchTemplatesTemplateIdVersionsVersionIdRequired;
@@ -5,10 +6,10 @@ use sendgrid2::request::PatchTemplatesTemplateIdVersionsVersionIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchTemplatesTemplateIdVersionsVersionIdRequired {
-        name: "your name",
-        template_id: "your template id",
-        version_id: "your version id",
         subject: "your subject",
+        template_id: "your template id",
+        name: "your name",
+        version_id: "your version id",
     };
     let response = client
         .patch_templates_template_id_versions_version_id(args)

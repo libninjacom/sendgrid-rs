@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PostSubusersRequired;
@@ -5,9 +6,9 @@ use sendgrid2::request::PostSubusersRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostSubusersRequired {
-        password: "your password",
         username: "your username",
         ips: &["your ips"],
+        password: "your password",
         email: "your email",
     };
     let response = client.post_subusers(args).send().await.unwrap();

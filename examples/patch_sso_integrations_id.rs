@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 use sendgrid2::request::PatchSsoIntegrationsIdRequired;
@@ -5,12 +6,12 @@ use sendgrid2::request::PatchSsoIntegrationsIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchSsoIntegrationsIdRequired {
-        signin_url: "your signin url",
-        signout_url: "your signout url",
-        entity_id: "your entity id",
         id: "your id",
-        enabled: true,
         name: "your name",
+        signout_url: "your signout url",
+        enabled: true,
+        entity_id: "your entity id",
+        signin_url: "your signin url",
     };
     let response = client
         .patch_sso_integrations_id(args)

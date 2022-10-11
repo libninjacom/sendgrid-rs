@@ -1,3 +1,4 @@
+#![allow(unused_imports)]
 use sendgrid2::SendgridClient;
 use sendgrid2::model::*;
 #[tokio::main]
@@ -12,9 +13,9 @@ async fn main() {
         .editor("your editor")
         .html_content("your html content")
         .ip_pool("your ip pool")
-        .list_ids(&[1])
+        .list_ids(vec![1])
         .plain_content("your plain content")
-        .segment_ids(&[1])
+        .segment_ids(vec![1])
         .sender_id(1)
         .subject("your subject")
         .suppression_group_id(1)
