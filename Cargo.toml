@@ -1,0 +1,2708 @@
+[package]
+name = "sendgrid2"
+edition = "2021"
+version = "0.1.0"
+description = "Sendgrid client, generated from the OpenAPI spec."
+homepage = "https://github.com/libninjacom/sendgrid-rs"
+documentation = "https://docs.rs/sendgrid2"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/libninjacom/sendgrid-rs"
+
+[workspace]
+members = []
+
+[dependencies]
+anyhow = "1.0.57"
+httpclient = "0.6.0"
+serde_json = "1.0.81"
+
+[dependencies.serde]
+version = "1.0.137"
+features = ["derive"]
+optional = false
+[dev-dependencies.tokio]
+version = "1.18.2"
+features = ["full"]
+optional = false
+
+[lib]
+path = "src/lib.rs"
+name = "sendgrid2"
+plugin = false
+proc-macro = false
+edition = "2021"
+crate-type = ["rlib"]
+required-features = []
+
+[[example]]
+path = "examples/create_api_keys.rs"
+name = "create_api_keys"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_access_settings_whitelist.rs"
+name = "delete_access_settings_whitelist"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_access_settings_whitelist_rule_id.rs"
+name = "delete_access_settings_whitelist_rule_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_alerts_alert_id.rs"
+name = "delete_alerts_alert_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_api_keys_api_key_id.rs"
+name = "delete_api_keys_api_key_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_asm_groups_group_id.rs"
+name = "delete_asm_groups_group_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_asm_groups_group_id_suppressions_email.rs"
+name = "delete_asm_groups_group_id_suppressions_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_asm_suppressions_global_email.rs"
+name = "delete_asm_suppressions_global_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_campaigns_campaign_id.rs"
+name = "delete_campaigns_campaign_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_campaigns_campaign_id_schedules.rs"
+name = "delete_campaigns_campaign_id_schedules"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_custom_fields_custom_field_id.rs"
+name = "delete_contactdb_custom_fields_custom_field_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_lists.rs"
+name = "delete_contactdb_lists"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_lists_list_id.rs"
+name = "delete_contactdb_lists_list_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_lists_list_id_recipients_recipient_id.rs"
+name = "delete_contactdb_lists_list_id_recipients_recipient_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_recipients.rs"
+name = "delete_contactdb_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_recipients_recipient_id.rs"
+name = "delete_contactdb_recipients_recipient_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_contactdb_segments_segment_id.rs"
+name = "delete_contactdb_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_design.rs"
+name = "delete_design"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_ips_pools_pool_name.rs"
+name = "delete_ips_pools_pool_name"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_ips_pools_pool_name_ips_ip.rs"
+name = "delete_ips_pools_pool_name_ips_ip"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_ips_warmup_ip_address.rs"
+name = "delete_ips_warmup_ip_address"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_lists_id.rs"
+name = "delete_lists_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_marketing_segments_segment_id.rs"
+name = "delete_marketing_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_marketing_singlesends.rs"
+name = "delete_marketing_singlesends"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_marketing_singlesends_id.rs"
+name = "delete_marketing_singlesends_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_marketing_singlesends_id_schedule.rs"
+name = "delete_marketing_singlesends_id_schedule"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_mc_contacts.rs"
+name = "delete_mc_contacts"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_mc_field_definitions_custom_field_id.rs"
+name = "delete_mc_field_definitions_custom_field_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_mc_lists_id_contacts.rs"
+name = "delete_mc_lists_id_contacts"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_segments_segment_id.rs"
+name = "delete_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_sso_certificates_cert_id.rs"
+name = "delete_sso_certificates_cert_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_sso_integrations_id.rs"
+name = "delete_sso_integrations_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_subusers_subuser_name.rs"
+name = "delete_subusers_subuser_name"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_subusers_subuser_name_monitor.rs"
+name = "delete_subusers_subuser_name_monitor"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_blocks.rs"
+name = "delete_suppression_blocks"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_blocks_email.rs"
+name = "delete_suppression_blocks_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_bounces.rs"
+name = "delete_suppression_bounces"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_bounces_email.rs"
+name = "delete_suppression_bounces_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_invalid_emails.rs"
+name = "delete_suppression_invalid_emails"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_invalid_emails_email.rs"
+name = "delete_suppression_invalid_emails_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_spam_reports.rs"
+name = "delete_suppression_spam_reports"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_suppression_spam_reports_email.rs"
+name = "delete_suppression_spam_reports_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_templates_template_id.rs"
+name = "delete_templates_template_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_templates_template_id_versions_version_id.rs"
+name = "delete_templates_template_id_versions_version_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_user_scheduled_sends_batch_id.rs"
+name = "delete_user_scheduled_sends_batch_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_user_webhooks_parse_settings_hostname.rs"
+name = "delete_user_webhooks_parse_settings_hostname"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_v_3_scopes_requests_request_id.rs"
+name = "delete_v_3_scopes_requests_request_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_v_3_senders_sender_id.rs"
+name = "delete_v_3_senders_sender_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_v_3_teammates_pending_token.rs"
+name = "delete_v_3_teammates_pending_token"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_v_3_teammates_username.rs"
+name = "delete_v_3_teammates_username"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_verified_senders_id.rs"
+name = "delete_verified_senders_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_whitelabel_domains_domain_id.rs"
+name = "delete_whitelabel_domains_domain_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_whitelabel_domains_id_ips_ip.rs"
+name = "delete_whitelabel_domains_id_ips_ip"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_whitelabel_domains_subuser.rs"
+name = "delete_whitelabel_domains_subuser"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_whitelabel_ips_id.rs"
+name = "delete_whitelabel_ips_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_whitelabel_links_id.rs"
+name = "delete_whitelabel_links_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_whitelabel_links_subuser.rs"
+name = "delete_whitelabel_links_subuser"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_access_settings_activity.rs"
+name = "get_access_settings_activity"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_access_settings_whitelist.rs"
+name = "get_access_settings_whitelist"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_access_settings_whitelist_rule_id.rs"
+name = "get_access_settings_whitelist_rule_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_alerts.rs"
+name = "get_alerts"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_alerts_alert_id.rs"
+name = "get_alerts_alert_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_api_keys.rs"
+name = "get_api_keys"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_api_keys_api_key_id.rs"
+name = "get_api_keys_api_key_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_asm_groups.rs"
+name = "get_asm_groups"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_asm_groups_group_id.rs"
+name = "get_asm_groups_group_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_asm_groups_group_id_suppressions.rs"
+name = "get_asm_groups_group_id_suppressions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_asm_suppressions.rs"
+name = "get_asm_suppressions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_asm_suppressions_email.rs"
+name = "get_asm_suppressions_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_asm_suppressions_global_email.rs"
+name = "get_asm_suppressions_global_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_automation_link_stat.rs"
+name = "get_automation_link_stat"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_automation_stat.rs"
+name = "get_automation_stat"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_automations_stats_export.rs"
+name = "get_automations_stats_export"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_browsers_stats.rs"
+name = "get_browsers_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_campaigns.rs"
+name = "get_campaigns"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_campaigns_campaign_id.rs"
+name = "get_campaigns_campaign_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_campaigns_campaign_id_schedules.rs"
+name = "get_campaigns_campaign_id_schedules"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_categories.rs"
+name = "get_categories"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_categories_stats.rs"
+name = "get_categories_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_categories_stats_sums.rs"
+name = "get_categories_stats_sums"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_clients_client_type_stats.rs"
+name = "get_clients_client_type_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_clients_stats.rs"
+name = "get_clients_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_custom_fields.rs"
+name = "get_contactdb_custom_fields"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_custom_fields_custom_field_id.rs"
+name = "get_contactdb_custom_fields_custom_field_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_lists.rs"
+name = "get_contactdb_lists"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_lists_list_id.rs"
+name = "get_contactdb_lists_list_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_lists_list_id_recipients.rs"
+name = "get_contactdb_lists_list_id_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_recipients.rs"
+name = "get_contactdb_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_recipients_billable_count.rs"
+name = "get_contactdb_recipients_billable_count"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_recipients_count.rs"
+name = "get_contactdb_recipients_count"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_recipients_recipient_id.rs"
+name = "get_contactdb_recipients_recipient_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_recipients_recipient_id_lists.rs"
+name = "get_contactdb_recipients_recipient_id_lists"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_reserved_fields.rs"
+name = "get_contactdb_reserved_fields"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_segments.rs"
+name = "get_contactdb_segments"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_segments_segment_id.rs"
+name = "get_contactdb_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_segments_segment_id_recipients.rs"
+name = "get_contactdb_segments_segment_id_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_contactdb_status.rs"
+name = "get_contactdb_status"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_design.rs"
+name = "get_design"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_devices_stats.rs"
+name = "get_devices_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_geo_stats.rs"
+name = "get_geo_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips.rs"
+name = "get_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_assigned.rs"
+name = "get_ips_assigned"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_ip_address.rs"
+name = "get_ips_ip_address"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_pools.rs"
+name = "get_ips_pools"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_pools_pool_name.rs"
+name = "get_ips_pools_pool_name"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_remaining.rs"
+name = "get_ips_remaining"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_warmup.rs"
+name = "get_ips_warmup"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_ips_warmup_ip_address.rs"
+name = "get_ips_warmup_ip_address"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_batch_batch_id.rs"
+name = "get_mail_batch_batch_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings.rs"
+name = "get_mail_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings_address_whitelist.rs"
+name = "get_mail_settings_address_whitelist"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings_bounce_purge.rs"
+name = "get_mail_settings_bounce_purge"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings_footer.rs"
+name = "get_mail_settings_footer"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings_forward_bounce.rs"
+name = "get_mail_settings_forward_bounce"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings_forward_spam.rs"
+name = "get_mail_settings_forward_spam"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mail_settings_template.rs"
+name = "get_mail_settings_template"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mailbox_providers_stats.rs"
+name = "get_mailbox_providers_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_contacts_exports.rs"
+name = "get_marketing_contacts_exports"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_contacts_imports_id.rs"
+name = "get_marketing_contacts_imports_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_segments.rs"
+name = "get_marketing_segments"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_segments_segment_id.rs"
+name = "get_marketing_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_singlesends.rs"
+name = "get_marketing_singlesends"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_singlesends_categories.rs"
+name = "get_marketing_singlesends_categories"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_marketing_singlesends_id.rs"
+name = "get_marketing_singlesends_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_contacts_count.rs"
+name = "get_mc_contacts_count"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_contacts_exports_id.rs"
+name = "get_mc_contacts_exports_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_contacts_id.rs"
+name = "get_mc_contacts_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_contats.rs"
+name = "get_mc_contats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_field_definitions.rs"
+name = "get_mc_field_definitions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_lists.rs"
+name = "get_mc_lists"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_lists_id.rs"
+name = "get_mc_lists_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_mc_lists_id_contacts_count.rs"
+name = "get_mc_lists_id_contacts_count"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_messages.rs"
+name = "get_messages"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_partner_settings.rs"
+name = "get_partner_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_partner_settings_new_relic.rs"
+name = "get_partner_settings_new_relic"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_scopes.rs"
+name = "get_scopes"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_segments.rs"
+name = "get_segments"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_segments_segment_id.rs"
+name = "get_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_sendgrid_pre_built_design.rs"
+name = "get_sendgrid_pre_built_design"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_singlesend_link_stat.rs"
+name = "get_singlesend_link_stat"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_singlesend_stat.rs"
+name = "get_singlesend_stat"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_singlesend_stats_export.rs"
+name = "get_singlesend_stats_export"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_sso_certificates_cert_id.rs"
+name = "get_sso_certificates_cert_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_sso_integrations.rs"
+name = "get_sso_integrations"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_sso_integrations_id.rs"
+name = "get_sso_integrations_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_sso_integrations_integration_id_certificates.rs"
+name = "get_sso_integrations_integration_id_certificates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_stats.rs"
+name = "get_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers.rs"
+name = "get_subusers"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers_reputations.rs"
+name = "get_subusers_reputations"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers_stats.rs"
+name = "get_subusers_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers_stats_monthly.rs"
+name = "get_subusers_stats_monthly"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers_stats_sums.rs"
+name = "get_subusers_stats_sums"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers_subuser_name_monitor.rs"
+name = "get_subusers_subuser_name_monitor"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_subusers_subuser_name_stats_monthly.rs"
+name = "get_subusers_subuser_name_stats_monthly"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_blocks.rs"
+name = "get_suppression_blocks"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_blocks_email.rs"
+name = "get_suppression_blocks_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_bounces.rs"
+name = "get_suppression_bounces"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_bounces_classifications.rs"
+name = "get_suppression_bounces_classifications"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_bounces_email.rs"
+name = "get_suppression_bounces_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_invalid_emails.rs"
+name = "get_suppression_invalid_emails"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_invalid_emails_email.rs"
+name = "get_suppression_invalid_emails_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_spam_reports.rs"
+name = "get_suppression_spam_reports"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_spam_reports_email.rs"
+name = "get_suppression_spam_reports_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppression_unsubscribes.rs"
+name = "get_suppression_unsubscribes"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_suppressions_bounces_classifications_classification.rs"
+name = "get_suppressions_bounces_classifications_classification"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_templates.rs"
+name = "get_templates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_templates_template_id.rs"
+name = "get_templates_template_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_templates_template_id_versions_version_id.rs"
+name = "get_templates_template_id_versions_version_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tracking_settings.rs"
+name = "get_tracking_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tracking_settings_click.rs"
+name = "get_tracking_settings_click"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tracking_settings_google_analytics.rs"
+name = "get_tracking_settings_google_analytics"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tracking_settings_open.rs"
+name = "get_tracking_settings_open"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_tracking_settings_subscription.rs"
+name = "get_tracking_settings_subscription"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_account.rs"
+name = "get_user_account"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_credits.rs"
+name = "get_user_credits"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_email.rs"
+name = "get_user_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_profile.rs"
+name = "get_user_profile"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_scheduled_sends.rs"
+name = "get_user_scheduled_sends"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_scheduled_sends_batch_id.rs"
+name = "get_user_scheduled_sends_batch_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_settings_enforced_tls.rs"
+name = "get_user_settings_enforced_tls"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_username.rs"
+name = "get_user_username"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_webhooks_event_settings.rs"
+name = "get_user_webhooks_event_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_webhooks_event_settings_signed.rs"
+name = "get_user_webhooks_event_settings_signed"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_webhooks_parse_settings.rs"
+name = "get_user_webhooks_parse_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_webhooks_parse_settings_hostname.rs"
+name = "get_user_webhooks_parse_settings_hostname"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_webhooks_parse_stats.rs"
+name = "get_user_webhooks_parse_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_messages_download_download_uuid.rs"
+name = "get_v_3_messages_download_download_uuid"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_messages_msg_id.rs"
+name = "get_v_3_messages_msg_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_scopes_requests.rs"
+name = "get_v_3_scopes_requests"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_senders.rs"
+name = "get_v_3_senders"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_senders_sender_id.rs"
+name = "get_v_3_senders_sender_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_teammates.rs"
+name = "get_v_3_teammates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_teammates_pending.rs"
+name = "get_v_3_teammates_pending"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_v_3_teammates_username.rs"
+name = "get_v_3_teammates_username"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_verified_senders.rs"
+name = "get_verified_senders"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_verified_senders_domains.rs"
+name = "get_verified_senders_domains"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_verified_senders_steps_completed.rs"
+name = "get_verified_senders_steps_completed"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_verified_senders_verify_token.rs"
+name = "get_verified_senders_verify_token"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_domains.rs"
+name = "get_whitelabel_domains"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_domains_default.rs"
+name = "get_whitelabel_domains_default"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_domains_domain_id.rs"
+name = "get_whitelabel_domains_domain_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_domains_subuser.rs"
+name = "get_whitelabel_domains_subuser"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_ips.rs"
+name = "get_whitelabel_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_ips_id.rs"
+name = "get_whitelabel_ips_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_links.rs"
+name = "get_whitelabel_links"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_links_default.rs"
+name = "get_whitelabel_links_default"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_links_id.rs"
+name = "get_whitelabel_links_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_whitelabel_links_subuser.rs"
+name = "get_whitelabel_links_subuser"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/getall_automation_stats.rs"
+name = "getall_automation_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/getall_singlesend_stats.rs"
+name = "getall_singlesend_stats"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/list_designs.rs"
+name = "list_designs"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/list_sendgrid_pre_built_designs.rs"
+name = "list_sendgrid_pre_built_designs"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_alerts_alert_id.rs"
+name = "patch_alerts_alert_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_api_keys_api_key_id.rs"
+name = "patch_api_keys_api_key_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_asm_groups_group_id.rs"
+name = "patch_asm_groups_group_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_campaigns_campaign_id.rs"
+name = "patch_campaigns_campaign_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_campaigns_campaign_id_schedules.rs"
+name = "patch_campaigns_campaign_id_schedules"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_contactdb_lists_list_id.rs"
+name = "patch_contactdb_lists_list_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_contactdb_recipients.rs"
+name = "patch_contactdb_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_contactdb_segments_segment_id.rs"
+name = "patch_contactdb_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mail_settings_address_whitelist.rs"
+name = "patch_mail_settings_address_whitelist"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mail_settings_bounce_purge.rs"
+name = "patch_mail_settings_bounce_purge"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mail_settings_footer.rs"
+name = "patch_mail_settings_footer"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mail_settings_forward_bounce.rs"
+name = "patch_mail_settings_forward_bounce"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mail_settings_forward_spam.rs"
+name = "patch_mail_settings_forward_spam"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mail_settings_template.rs"
+name = "patch_mail_settings_template"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_marketing_segments_segment_id.rs"
+name = "patch_marketing_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_marketing_singlesends_id.rs"
+name = "patch_marketing_singlesends_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mc_field_definitions_custom_field_id.rs"
+name = "patch_mc_field_definitions_custom_field_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_mc_lists_id.rs"
+name = "patch_mc_lists_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_partner_settings_new_relic.rs"
+name = "patch_partner_settings_new_relic"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_segments_segment_id.rs"
+name = "patch_segments_segment_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_sso_certificates_cert_id.rs"
+name = "patch_sso_certificates_cert_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_sso_integrations_id.rs"
+name = "patch_sso_integrations_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_sso_teammates_username.rs"
+name = "patch_sso_teammates_username"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_subusers_subuser_name.rs"
+name = "patch_subusers_subuser_name"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_templates_template_id.rs"
+name = "patch_templates_template_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_templates_template_id_versions_version_id.rs"
+name = "patch_templates_template_id_versions_version_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_tracking_settings_click.rs"
+name = "patch_tracking_settings_click"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_tracking_settings_google_analytics.rs"
+name = "patch_tracking_settings_google_analytics"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_tracking_settings_open.rs"
+name = "patch_tracking_settings_open"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_tracking_settings_subscription.rs"
+name = "patch_tracking_settings_subscription"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_user_profile.rs"
+name = "patch_user_profile"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_user_scheduled_sends_batch_id.rs"
+name = "patch_user_scheduled_sends_batch_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_user_settings_enforced_tls.rs"
+name = "patch_user_settings_enforced_tls"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_user_webhooks_event_settings.rs"
+name = "patch_user_webhooks_event_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_user_webhooks_event_settings_signed.rs"
+name = "patch_user_webhooks_event_settings_signed"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_user_webhooks_parse_settings_hostname.rs"
+name = "patch_user_webhooks_parse_settings_hostname"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_v_3_scopes_requests_approve_id.rs"
+name = "patch_v_3_scopes_requests_approve_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_v_3_senders_sender_id.rs"
+name = "patch_v_3_senders_sender_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_v_3_teammates_username.rs"
+name = "patch_v_3_teammates_username"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_verified_senders_id.rs"
+name = "patch_verified_senders_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_whitelabel_domains_domain_id.rs"
+name = "patch_whitelabel_domains_domain_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/patch_whitelabel_links_id.rs"
+name = "patch_whitelabel_links_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_access_settings_whitelist.rs"
+name = "post_access_settings_whitelist"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_alerts.rs"
+name = "post_alerts"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_asm_groups.rs"
+name = "post_asm_groups"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_asm_groups_group_id_suppressions.rs"
+name = "post_asm_groups_group_id_suppressions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_asm_groups_group_id_suppressions_search.rs"
+name = "post_asm_groups_group_id_suppressions_search"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_asm_suppressions_global.rs"
+name = "post_asm_suppressions_global"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_campaigns.rs"
+name = "post_campaigns"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_campaigns_campaign_id_schedules.rs"
+name = "post_campaigns_campaign_id_schedules"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_campaigns_campaign_id_schedules_now.rs"
+name = "post_campaigns_campaign_id_schedules_now"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_campaigns_campaign_id_schedules_test.rs"
+name = "post_campaigns_campaign_id_schedules_test"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_custom_fields.rs"
+name = "post_contactdb_custom_fields"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_lists.rs"
+name = "post_contactdb_lists"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_lists_list_id_recipients.rs"
+name = "post_contactdb_lists_list_id_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_lists_list_id_recipients_recipient_id.rs"
+name = "post_contactdb_lists_list_id_recipients_recipient_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_recipients.rs"
+name = "post_contactdb_recipients"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_recipients_search.rs"
+name = "post_contactdb_recipients_search"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_contactdb_segments.rs"
+name = "post_contactdb_segments"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_design.rs"
+name = "post_design"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_design_dup.rs"
+name = "post_design_dup"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_ips.rs"
+name = "post_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_ips_pools.rs"
+name = "post_ips_pools"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_ips_pools_pool_name_ips.rs"
+name = "post_ips_pools_pool_name_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_ips_warmup.rs"
+name = "post_ips_warmup"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_mail_batch.rs"
+name = "post_mail_batch"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_mail_send.rs"
+name = "post_mail_send"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_contacts_batch.rs"
+name = "post_marketing_contacts_batch"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_contacts_search_emails.rs"
+name = "post_marketing_contacts_search_emails"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_segments.rs"
+name = "post_marketing_segments"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_senders.rs"
+name = "post_marketing_senders"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_singlesends.rs"
+name = "post_marketing_singlesends"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_singlesends_id.rs"
+name = "post_marketing_singlesends_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_singlesends_search.rs"
+name = "post_marketing_singlesends_search"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_marketing_test_send_email.rs"
+name = "post_marketing_test_send_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_mc_contacts_exports.rs"
+name = "post_mc_contacts_exports"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_mc_contacts_search.rs"
+name = "post_mc_contacts_search"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_mc_field_definitions.rs"
+name = "post_mc_field_definitions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_mc_lists.rs"
+name = "post_mc_lists"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_segments.rs"
+name = "post_segments"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_senders.rs"
+name = "post_senders"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_sendgrid_pre_built_design.rs"
+name = "post_sendgrid_pre_built_design"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_sso_certificates.rs"
+name = "post_sso_certificates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_sso_integrations.rs"
+name = "post_sso_integrations"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_sso_teammates.rs"
+name = "post_sso_teammates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_subusers.rs"
+name = "post_subusers"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_subusers_subuser_name_monitor.rs"
+name = "post_subusers_subuser_name_monitor"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_templates.rs"
+name = "post_templates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_templates_template_id.rs"
+name = "post_templates_template_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_templates_template_id_versions.rs"
+name = "post_templates_template_id_versions"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_templates_template_id_versions_version_id_activate.rs"
+name = "post_templates_template_id_versions_version_id_activate"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_user_scheduled_sends.rs"
+name = "post_user_scheduled_sends"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_user_webhooks_event_test.rs"
+name = "post_user_webhooks_event_test"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_user_webhooks_parse_settings.rs"
+name = "post_user_webhooks_parse_settings"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_v_3_messages_download.rs"
+name = "post_v_3_messages_download"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_v_3_senders_sender_id_resend_verification.rs"
+name = "post_v_3_senders_sender_id_resend_verification"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_v_3_teammates.rs"
+name = "post_v_3_teammates"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_v_3_teammates_pending_token_resend.rs"
+name = "post_v_3_teammates_pending_token_resend"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_validations_email.rs"
+name = "post_validations_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_verified_senders.rs"
+name = "post_verified_senders"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_verified_senders_resend_id.rs"
+name = "post_verified_senders_resend_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_dns_email.rs"
+name = "post_whitelabel_dns_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_domains.rs"
+name = "post_whitelabel_domains"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_domains_domain_id_subuser.rs"
+name = "post_whitelabel_domains_domain_id_subuser"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_domains_id_ips.rs"
+name = "post_whitelabel_domains_id_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_domains_id_validate.rs"
+name = "post_whitelabel_domains_id_validate"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_ips.rs"
+name = "post_whitelabel_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_ips_id_validate.rs"
+name = "post_whitelabel_ips_id_validate"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_links.rs"
+name = "post_whitelabel_links"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_links_id_validate.rs"
+name = "post_whitelabel_links_id_validate"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/post_whitelabel_links_link_id_subuser.rs"
+name = "post_whitelabel_links_link_id_subuser"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_api_keys_api_key_id.rs"
+name = "put_api_keys_api_key_id"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_design.rs"
+name = "put_design"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_ips_pools_pool_name.rs"
+name = "put_ips_pools_pool_name"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_marketing_singlesends_id_schedule.rs"
+name = "put_marketing_singlesends_id_schedule"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_mc_contacts.rs"
+name = "put_mc_contacts"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_mc_contacts_imports.rs"
+name = "put_mc_contacts_imports"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_subusers_subuser_name_ips.rs"
+name = "put_subusers_subuser_name_ips"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_subusers_subuser_name_monitor.rs"
+name = "put_subusers_subuser_name_monitor"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_user_email.rs"
+name = "put_user_email"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_user_password.rs"
+name = "put_user_password"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/put_user_username.rs"
+name = "put_user_username"
+plugin = false
+proc-macro = false
+edition = "2021"
+required-features = []
