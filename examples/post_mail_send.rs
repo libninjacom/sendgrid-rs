@@ -6,13 +6,13 @@ use sendgrid2::request::PostMailSendRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostMailSendRequired {
-        personalizations: vec![::serde_json::json!({})],
-        content: vec![::serde_json::json!({})],
         subject: "your subject",
+        content: vec![::serde_json::json!({})],
         from: FromEmailObject {
-            name: Some("your name".to_owned()),
             email: "your email".to_owned(),
+            name: Some("your name".to_owned()),
         },
+        personalizations: vec![::serde_json::json!({})],
     };
     let response = client
         .post_mail_send(args)
@@ -25,8 +25,8 @@ async fn main() {
         .ip_pool_name("your ip pool name")
         .mail_settings(::serde_json::json!({}))
         .reply_to(ReplyToEmailObject {
-            email: "your email".to_owned(),
             name: Some("your name".to_owned()),
+            email: "your email".to_owned(),
         })
         .reply_to_list(vec![::serde_json::json!({})])
         .send_at(1)

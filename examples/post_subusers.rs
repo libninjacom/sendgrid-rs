@@ -6,10 +6,10 @@ use sendgrid2::request::PostSubusersRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostSubusersRequired {
-        username: "your username",
-        ips: &["your ips"],
         password: "your password",
+        username: "your username",
         email: "your email",
+        ips: &["your ips"],
     };
     let response = client.post_subusers(args).send().await.unwrap();
     println!("{:#?}", response);

@@ -6,12 +6,12 @@ use sendgrid2::request::PatchCampaignsCampaignIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchCampaignsCampaignIdRequired {
-        categories: &["your categories"],
-        title: "your title",
-        html_content: "your html content",
         campaign_id: 1,
-        plain_content: "your plain content",
+        categories: &["your categories"],
         subject: "your subject",
+        html_content: "your html content",
+        title: "your title",
+        plain_content: "your plain content",
     };
     let response = client
         .patch_campaigns_campaign_id(args)

@@ -12,8 +12,8 @@ async fn main() {
         .conditions(
             vec![
                 ContactdbSegmentsConditions { and_or : Some("your and or".to_owned()),
-                field : "your field".to_owned(), operator : "your operator".to_owned(),
-                value : "your value".to_owned() }
+                field : "your field".to_owned(), value : "your value".to_owned(),
+                operator : "your operator".to_owned() }
             ],
         )
         .list_id(1.0)

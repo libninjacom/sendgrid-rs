@@ -7,10 +7,10 @@ async fn main() {
     let client = SendgridClient::from_env();
     let args = PostSsoIntegrationsRequired {
         enabled: true,
-        name: "your name",
-        signout_url: "your signout url",
-        signin_url: "your signin url",
         entity_id: "your entity id",
+        signout_url: "your signout url",
+        name: "your name",
+        signin_url: "your signin url",
     };
     let response = client
         .post_sso_integrations(args)

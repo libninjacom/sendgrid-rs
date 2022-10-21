@@ -6,8 +6,8 @@ async fn main() {
     let client = SendgridClient::from_env();
     let conditions = vec![
         ContactdbSegmentsConditions { and_or : Some("your and or".to_owned()), field :
-        "your field".to_owned(), operator : "your operator".to_owned(), value :
-        "your value".to_owned() }
+        "your field".to_owned(), value : "your value".to_owned(), operator :
+        "your operator".to_owned() }
     ];
     let name = "your name";
     let response = client

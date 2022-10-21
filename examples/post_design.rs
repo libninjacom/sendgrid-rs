@@ -6,13 +6,13 @@ use sendgrid2::request::PostDesignRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PostDesignRequired {
-        name: "your name",
+        plain_content: "your plain content",
         editor: "your editor",
+        categories: &["your categories"],
+        name: "your name",
         generate_plain_content: true,
         subject: "your subject",
-        categories: &["your categories"],
         html_content: "your html content",
-        plain_content: "your plain content",
     };
     let response = client.post_design(args).send().await.unwrap();
     println!("{:#?}", response);

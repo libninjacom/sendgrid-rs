@@ -6,10 +6,10 @@ use sendgrid2::request::PatchTemplatesTemplateIdVersionsVersionIdRequired;
 async fn main() {
     let client = SendgridClient::from_env();
     let args = PatchTemplatesTemplateIdVersionsVersionIdRequired {
-        subject: "your subject",
-        template_id: "your template id",
         name: "your name",
+        template_id: "your template id",
         version_id: "your version id",
+        subject: "your subject",
     };
     let response = client
         .patch_templates_template_id_versions_version_id(args)
